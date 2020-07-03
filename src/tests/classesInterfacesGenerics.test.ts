@@ -13,7 +13,7 @@ describe('Test', () => {
 		expect(encrypt.stringToEncrypt).toBe('password');
 	});
 
-	test('Check i', () => {
+	test('Check if added item can be accessed', () => {
 		const cache = new Cache<string>();
 		cache.AddItem('1', 'Hola');
 		const getitem = cache.GetItem('1');
